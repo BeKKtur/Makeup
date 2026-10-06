@@ -1,139 +1,713 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
   <meta name="theme-color" content="#17120f">
-  <meta name="description" content="Алина — визажист и стилист по волосам в Бишкеке. Макияж, укладки и свадебные образы.">
-  <title>Алина — Makeup & Hair Artist</title>
+
+  <meta
+    name="description"
+    content="Визажист и стилист по волосам в Бишкеке. Макияж, укладки и свадебные образы."
+  >
+
+  <title>Makeup & Hair Artist</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <div class="noise" aria-hidden="true"></div>
-  <div class="cursor" aria-hidden="true"><span>view</span></div>
+
+  <div class="cursor" aria-hidden="true">
+    <span>view</span>
+  </div>
+
+
+  <!-- ================= HEADER ================= -->
+
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="На главную">ALINA<span>•</span></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="menu"><span></span><span></span><b>Меню</b></button>
-    <nav id="menu" class="menu" aria-label="Основная навигация">
-      <a href="#about">Обо мне</a><a href="#services">Услуги</a><a href="#portfolio">Работы</a><a href="#contacts">Контакты</a>
+
+    <a
+      class="brand"
+      href="#top"
+      aria-label="На главную"
+    >
+      <span data-brand>ALINA</span><i>•</i>
+    </a>
+
+    <button
+      class="menu-toggle"
+      aria-expanded="false"
+      aria-controls="menu"
+      aria-label="Открыть меню"
+    >
+      <span></span>
+      <span></span>
+      <b>Меню</b>
+    </button>
+
+    <nav
+      id="menu"
+      class="menu"
+      aria-label="Основная навигация"
+    >
+      <a href="#about">Обо мне</a>
+      <a href="#services">Услуги</a>
+      <a href="#portfolio">Работы</a>
+      <a href="#contacts">Контакты</a>
     </nav>
+
   </header>
 
+
   <main id="top">
+
+
+    <!-- ================= HERO ================= -->
+
     <section class="hero">
-      <div class="hero-orbit" aria-hidden="true"></div>
-      <div class="hero-image parallax" data-speed="0.08">
-        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1600&q=88" alt="Модель с вечерним макияжем" fetchpriority="high">
+
+      <div
+        class="hero-orbit"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="hero-image parallax"
+        data-speed="0.08"
+      >
+        <img
+          data-hero-image
+          src=""
+          alt="Makeup artist"
+          fetchpriority="high"
+        >
       </div>
-      <p class="hero-kicker reveal">Makeup &amp; Hair Artist · Bishkek</p>
+
+      <p class="hero-kicker reveal" data-hero-kicker>
+        Makeup & Hair Artist · Bishkek
+      </p>
+
       <div class="hero-copy">
-        <p class="eyebrow reveal">Красота в твоём характере</p>
-        <h1 class="reveal">Алина <em>—</em><br><i>Makeup</i> <span>&amp;</span><br>Hair Artist</h1>
-        <p class="hero-lead reveal">Подчеркну твою красоту<br>для особенного дня</p>
-        <a class="button button-light reveal" href="https://wa.me/996555123456?text=Здравствуйте,%20Алина!%20Хочу%20записаться" target="_blank" rel="noopener"><span>Записаться</span><b>↗</b></a>
+
+        <p class="eyebrow reveal">
+          Красота в твоём характере
+        </p>
+
+        <h1 class="reveal">
+          <span data-name>Алина</span>
+          <em>—</em>
+          <br>
+
+          <i>Makeup</i>
+          <span class="hero-and">&amp;</span>
+          <br>
+
+          Hair Artist
+        </h1>
+
+        <p class="hero-lead reveal">
+          Подчеркну твою красоту
+          <br>
+          для особенного дня
+        </p>
+
+        <a
+          class="button button-light reveal"
+          data-whatsapp
+          href="#"
+          target="_blank"
+          rel="noopener"
+        >
+          <span>Записаться</span>
+          <b>↗</b>
+        </a>
+
       </div>
-      <p class="hero-side">BISHKEK · BEAUTY · 2026</p>
-      <a class="scroll-cue" href="#about"><span></span>листайте</a>
+
+      <p class="hero-side">
+        BISHKEK · BEAUTY · 2026
+      </p>
+
+      <a
+        class="scroll-cue"
+        href="#about"
+      >
+        <span></span>
+        листайте
+      </a>
+
     </section>
 
-    <section class="intro" id="about">
-      <div class="section-index reveal">01 / Обо мне</div>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section
+      class="intro"
+      id="about"
+    >
+
+      <div class="section-index reveal">
+        01 / Обо мне
+      </div>
+
       <div class="intro-title reveal">
-        <p>Не меняю тебя —</p>
-        <h2>помогаю <i>сиять</i></h2>
+
+        <p>
+          Не меняю тебя —
+        </p>
+
+        <h2>
+          помогаю <i>сиять</i>
+        </h2>
+
       </div>
-      <figure class="intro-photo reveal parallax" data-speed="0.04">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=1200&q=86" alt="Визажист Алина за работой">
-        <figcaption>Алина, визажист<br>и hair-стилист</figcaption>
+
+      <figure
+        class="intro-photo reveal parallax"
+        data-speed="0.04"
+      >
+
+        <img
+          data-about-image
+          src=""
+          alt="Визажист за работой"
+          loading="lazy"
+        >
+
+        <figcaption>
+          <span data-name>Алина</span>,
+          визажист
+          <br>
+          и hair-стилист
+        </figcaption>
+
       </figure>
+
       <div class="intro-story reveal">
-        <span class="dropcap">Я</span>
-        <p>верю, что лучший образ не скрывает, а раскрывает. Уже несколько лет создаю макияж и укладки, в которых комфортно быть собой — только чуточку смелее.</p>
-        <p>Перед работой мы обсуждаем настроение, платье и детали события. Так рождается цельный образ, который красиво выглядит и в жизни, и в кадре.</p>
-        <div class="signature">Алина</div>
+
+        <span class="dropcap">
+          Я
+        </span>
+
+        <p data-about-one>
+          Верю, что лучший образ не скрывает,
+          а раскрывает.
+        </p>
+
+        <p data-about-two>
+          Перед работой мы обсуждаем настроение,
+          платье и детали события.
+        </p>
+
+        <div
+          class="signature"
+          data-name
+        >
+          Алина
+        </div>
+
       </div>
+
     </section>
 
-    <section class="services" id="services">
-      <div class="section-head reveal"><div class="section-index">02 / Услуги</div><h2>Твой образ.<br><i>Твои правила.</i></h2></div>
-      <div class="service-list">
-        <article class="service reveal"><span>01</span><div><h3>Дневной макияж</h3><p>Свежий, деликатный и стойкий образ на каждый день</p></div><strong>1 500 <small>сом</small></strong><b>↗</b></article>
-        <article class="service reveal"><span>02</span><div><h3>Вечерний макияж</h3><p>Выразительные акценты, сияние и безупречный тон</p></div><strong>2 000 <small>сом</small></strong><b>↗</b></article>
-        <article class="service reveal"><span>03</span><div><h3>Свадебный образ</h3><p>Макияж и укладка, репетиция — по запросу</p></div><strong>3 500 <small>сом</small></strong><b>↗</b></article>
-        <article class="service reveal"><span>04</span><div><h3>Укладка</h3><p>Локоны, гладкий пучок или текстурная форма</p></div><strong><small>от</small> 1 500 <small>сом</small></strong><b>↗</b></article>
+
+    <!-- ================= SERVICES ================= -->
+
+    <section
+      class="services"
+      id="services"
+    >
+
+      <div class="section-head reveal">
+
+        <div class="section-index">
+          02 / Услуги
+        </div>
+
+        <h2>
+          Твой образ.
+          <br>
+          <i>Твои правила.</i>
+        </h2>
+
       </div>
-      <p class="services-note reveal">Финальная стоимость зависит от сложности и длины волос. Расходные материалы включены.</p>
+
+      <div
+        class="service-list"
+        data-services
+      ></div>
+
+      <p
+        class="services-note reveal"
+        data-services-note
+      ></p>
+
     </section>
 
-    <section class="portfolio" id="portfolio">
-      <div class="section-head reveal"><div class="section-index">03 / Selected works</div><h2>Портфолио</h2><p>Красота — в деталях.<br>Коснитесь фото, чтобы рассмотреть.</p></div>
-      <div class="gallery">
-        <button class="gallery-item wide reveal" data-caption="Soft glam"><img loading="lazy" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1100&q=86" alt="Нежный макияж soft glam"></button>
-        <button class="gallery-item tall reveal" data-caption="Editorial look"><img loading="lazy" src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1000&q=86" alt="Редакционный beauty-образ"></button>
-        <button class="gallery-item reveal" data-caption="Clean beauty"><img loading="lazy" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=86" alt="Естественный макияж"></button>
-        <button class="gallery-item tall reveal" data-caption="Bridal glow"><img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=86" alt="Свадебный образ"></button>
-        <button class="gallery-item wide reveal" data-caption="Evening mood"><img loading="lazy" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1100&q=86" alt="Вечерний образ"></button>
-        <button class="gallery-item reveal" data-caption="Golden hour"><img loading="lazy" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1000&q=86" alt="Макияж в золотом свете"></button>
+
+    <!-- ================= PORTFOLIO ================= -->
+
+    <section
+      class="portfolio"
+      id="portfolio"
+    >
+
+      <div class="section-head reveal">
+
+        <div class="section-index">
+          03 / Selected works
+        </div>
+
+        <h2>
+          Портфолио
+        </h2>
+
+        <p>
+          Красота — в деталях.
+          <br>
+          Коснитесь фото,
+          чтобы рассмотреть.
+        </p>
+
       </div>
+
+      <div
+        class="gallery"
+        data-gallery
+      ></div>
+
     </section>
+
+
+    <!-- ================= BEFORE / AFTER ================= -->
 
     <section class="transformation">
-      <div class="section-head reveal"><div class="section-index">04 / Transformation</div><h2>До <i>/</i> После</h2><p>Двигайте линию пальцем</p></div>
-      <div class="compare reveal" style="--position: 50%">
-        <img class="compare-after" loading="lazy" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1400&q=88" alt="После макияжа">
-        <div class="compare-before"><img loading="lazy" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=1400&q=88" alt="До макияжа"></div>
-        <span class="compare-label before-label">до</span><span class="compare-label after-label">после</span>
-        <div class="compare-line"><button aria-label="Передвинуть разделитель до и после">↔</button></div>
-        <input type="range" min="0" max="100" value="50" aria-label="Сравнение до и после">
+
+      <div class="section-head reveal">
+
+        <div class="section-index">
+          04 / Transformation
+        </div>
+
+        <h2>
+          До <i>/</i> После
+        </h2>
+
+        <p>
+          Двигайте линию пальцем
+        </p>
+
       </div>
-      <p class="demo-note">Фотографии используются для демонстрации механики блока.</p>
+
+      <div
+        class="compare reveal"
+        style="--position:50%"
+      >
+
+        <img
+          class="compare-after"
+          data-after-image
+          src=""
+          alt="После макияжа"
+          loading="lazy"
+        >
+
+        <div class="compare-before">
+
+          <img
+            data-before-image
+            src=""
+            alt="До макияжа"
+            loading="lazy"
+          >
+
+        </div>
+
+        <span class="compare-label before-label">
+          до
+        </span>
+
+        <span class="compare-label after-label">
+          после
+        </span>
+
+        <div class="compare-line">
+
+          <button
+            type="button"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            ↔
+          </button>
+
+        </div>
+
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          aria-label="Сравнение до и после"
+        >
+
+      </div>
+
+      <p class="demo-note">
+        Двигайте ползунок,
+        чтобы увидеть результат
+      </p>
+
     </section>
+
+
+    <!-- ================= BENEFITS ================= -->
 
     <section class="benefits">
-      <div class="benefits-photo reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=1200&q=86" alt="Кисти и косметика визажиста"></div>
-      <div class="benefits-copy">
-        <div class="section-index reveal">05 / Мой подход</div><h2 class="reveal">Почему<br>выбирают <i>меня</i></h2>
-        <ul>
-          <li class="reveal"><span>01</span><div><h3>Стойкая косметика</h3><p>Профессиональные продукты, проверенные в долгих съёмках и праздниках.</p></div></li>
-          <li class="reveal"><span>02</span><div><h3>Индивидуальный образ</h3><p>Никаких копий — только образ, который работает именно для вас.</p></div></li>
-          <li class="reveal"><span>03</span><div><h3>Стерильные инструменты</h3><p>Чистые кисти, одноразовые расходники и строгая гигиена.</p></div></li>
-          <li class="reveal"><span>04</span><div><h3>Выезд по Бишкеку</h3><p>Приеду в удобное место и помогу сохранить ваше время.</p></div></li>
-        </ul>
+
+      <div class="benefits-photo reveal">
+
+        <img
+          data-benefits-image
+          src=""
+          alt="Косметика визажиста"
+          loading="lazy"
+        >
+
       </div>
+
+      <div class="benefits-copy">
+
+        <div class="section-index reveal">
+          05 / Мой подход
+        </div>
+
+        <h2 class="reveal">
+          Почему
+          <br>
+          выбирают <i>меня</i>
+        </h2>
+
+        <ul data-benefits></ul>
+
+      </div>
+
     </section>
+
+
+    <!-- ================= REVIEWS ================= -->
 
     <section class="reviews">
-      <div class="section-head reveal"><div class="section-index">06 / Отзывы</div><h2>Слова <i>клиенток</i></h2></div>
-      <div class="reviews-track" aria-label="Отзывы клиентов">
-        <article class="review"><p>«Алина услышала меня с полуслова. Макияж продержался весь вечер, а я всё время чувствовала себя собой.»</p><footer><span>ЕК</span><div><b>Екатерина</b><small>вечерний макияж · демо-отзыв</small></div></footer></article>
-        <article class="review featured"><p>«На свадьбе я не поправляла образ ни разу. Локоны остались идеальными даже после танцев, а на фото кожа просто сияет.»</p><footer><span>АМ</span><div><b>Амина</b><small>свадебный образ · демо-отзыв</small></div></footer></article>
-        <article class="review"><p>«Очень спокойно, бережно и невероятно красиво. Получила комплиментов больше, чем могла представить.»</p><footer><span>ДС</span><div><b>Диана</b><small>укладка и макияж · демо-отзыв</small></div></footer></article>
+
+      <div class="section-head reveal">
+
+        <div class="section-index">
+          06 / Отзывы
+        </div>
+
+        <h2>
+          Слова <i>клиенток</i>
+        </h2>
+
       </div>
-      <div class="review-controls"><button class="review-prev" aria-label="Предыдущий отзыв">←</button><span><b>01</b> / 03</span><button class="review-next" aria-label="Следующий отзыв">→</button></div>
+
+      <div
+        class="reviews-track"
+        data-reviews
+        aria-label="Отзывы клиентов"
+      ></div>
+
+      <div class="review-controls">
+
+        <button
+          class="review-prev"
+          aria-label="Предыдущий отзыв"
+        >
+          ←
+        </button>
+
+        <span>
+          <b>01</b>
+          /
+          <span data-review-total>03</span>
+        </span>
+
+        <button
+          class="review-next"
+          aria-label="Следующий отзыв"
+        >
+          →
+        </button>
+
+      </div>
+
     </section>
+
+
+    <!-- ================= PROCESS ================= -->
 
     <section class="process">
-      <div class="section-head reveal"><div class="section-index">07 / Как записаться</div><h2>Четыре шага<br>до твоего <i>образа</i></h2></div>
+
+      <div class="section-head reveal">
+
+        <div class="section-index">
+          07 / Как записаться
+        </div>
+
+        <h2>
+          Четыре шага
+          <br>
+          до твоего <i>образа</i>
+        </h2>
+
+      </div>
+
       <ol>
-        <li class="reveal"><span>01</span><p>Выберите услугу</p></li><li class="reveal"><span>02</span><p>Напишите мне</p></li><li class="reveal"><span>03</span><p>Подтвердите время</p></li><li class="reveal"><span>04</span><p>Готовимся к вашему образу</p></li>
+
+        <li class="reveal">
+          <span>01</span>
+          <p>Выберите услугу</p>
+        </li>
+
+        <li class="reveal">
+          <span>02</span>
+          <p>Напишите мне</p>
+        </li>
+
+        <li class="reveal">
+          <span>03</span>
+          <p>Подтвердите время</p>
+        </li>
+
+        <li class="reveal">
+          <span>04</span>
+          <p>Готовимся к вашему образу</p>
+        </li>
+
       </ol>
+
     </section>
 
-    <section class="final-cta" id="contacts">
-      <div class="cta-photo parallax" data-speed="0.04"><img loading="lazy" src="https://images.unsplash.com/photo-1485960994840-902a67e187c8?auto=format&fit=crop&w=1600&q=88" alt="Девушка с вечерним макияжем"></div>
-      <div class="cta-content reveal"><p>Давай создадим магию вместе</p><h2>Готова к своему<br><i>идеальному образу?</i></h2><a class="button button-gold" href="https://wa.me/996555123456?text=Здравствуйте,%20Алина!%20Хочу%20записаться" target="_blank" rel="noopener"><span>Записаться в WhatsApp</span><b>↗</b></a></div>
+
+    <!-- ================= CONTACTS ================= -->
+
+    <section
+      class="final-cta"
+      id="contacts"
+    >
+
+      <div
+        class="cta-photo parallax"
+        data-speed="0.04"
+      >
+
+        <img
+          data-final-image
+          src=""
+          alt="Beauty образ"
+          loading="lazy"
+        >
+
+      </div>
+
+      <div class="cta-content reveal">
+
+        <p>
+          Давай создадим магию вместе
+        </p>
+
+        <h2>
+          Готова к своему
+          <br>
+          <i>идеальному образу?</i>
+        </h2>
+
+        <a
+          class="button button-gold"
+          data-whatsapp
+          href="#"
+          target="_blank"
+          rel="noopener"
+        >
+          <span>
+            Записаться в WhatsApp
+          </span>
+
+          <b>↗</b>
+        </a>
+
+      </div>
+
+
       <footer>
-        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a><a href="https://wa.me/996555123456" target="_blank" rel="noopener">WhatsApp ↗</a><a href="tel:+996555123456">+996 555 123 456</a><span>Бишкек, Кыргызстан</span>
-        <small>© 2026 ALINA BEAUTY · Демо-сайт</small>
+
+        <a
+          data-instagram
+          href="#"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram ↗
+        </a>
+
+        <a
+          data-whatsapp
+          href="#"
+          target="_blank"
+          rel="noopener"
+        >
+          WhatsApp ↗
+        </a>
+
+        <a
+          data-phone
+          data-phone-text
+          href="#"
+        >
+          +996 555 123 456
+        </a>
+
+        <span data-location>
+          Бишкек, Кыргызстан
+        </span>
+
+        <small>
+          © 2026
+          <span data-brand>ALINA BEAUTY</span>
+        </small>
+
       </footer>
+
     </section>
+
   </main>
 
-  <a class="mobile-book" href="https://wa.me/996555123456?text=Здравствуйте,%20Алина!%20Хочу%20записаться" target="_blank" rel="noopener"><span>Записаться</span><b>↗</b></a>
-  <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true"><button class="lightbox-close" aria-label="Закрыть">×</button><img src="" alt=""><p></p></div>
+
+  <!-- ================= MOBILE BAR ================= -->
+
+  <div class="mobile-book">
+
+    <a
+      class="mobile-action mobile-call"
+      data-phone
+      href="#"
+      aria-label="Позвонить"
+    >
+
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2
+          19.79 19.79 0 0 1-8.63-3.07
+          19.5 19.5 0 0 1-6-6
+          19.79 19.79 0 0 1-3.07-8.67
+          A2 2 0 0 1 4.11 2h3
+          a2 2 0 0 1 2 1.72
+          c.12.9.33 1.78.62 2.63
+          a2 2 0 0 1-.45 2.11L8 9.73
+          a16 16 0 0 0 6 6l1.27-1.27
+          a2 2 0 0 1 2.11-.45
+          c.85.29 1.73.5 2.63.62
+          A2 2 0 0 1 22 16.92z"
+        />
+      </svg>
+
+      <span>
+        <small>Связаться</small>
+        Позвонить
+      </span>
+
+    </a>
+
+
+    <a
+      class="mobile-action mobile-whatsapp"
+      data-whatsapp
+      href="#"
+      target="_blank"
+      rel="noopener"
+      aria-label="Записаться в WhatsApp"
+    >
+
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path
+          d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"
+        />
+
+        <path d="M8 9h8"/>
+        <path d="M8 13h5"/>
+      </svg>
+
+      <span>
+        <small>Онлайн-запись</small>
+        Записаться
+      </span>
+
+    </a>
+
+  </div>
+
+
+  <!-- ================= LIGHTBOX ================= -->
+
+  <div
+    class="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+  >
+
+    <button
+      class="lightbox-close"
+      aria-label="Закрыть"
+    >
+      ×
+    </button>
+
+    <img src="" alt="">
+
+    <p></p>
+
+  </div>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
